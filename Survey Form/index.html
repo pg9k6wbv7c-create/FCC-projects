@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+
+    <h1>Gallatin Martial Arts Survey</h1>
+      <p>Please fill out the form below to let us know how we are doing:</p>
+    <form action="mailto:chris3denzik@gmail.com" method="post" enctype="text/plain">
+      
+      <label id="name-label">First:</label>
+        <input type="text" id="name" name="name" placeholder="First name" required >
+        <br>
+      <label id="lastname-label">Last:</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Last name" required >
+        <br>
+      <label id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        <br>
+      <label id="age-label">Age:</label>
+        <input placeholder="Age" type="number" id="age" name="age" min="3" max="100">
+        <br>
+        <br>
+
+      <select id="dropdown">
+        <option value="" disabled selected>Choose the style you tried from the menu below</option>
+        <option value="option1">Little Lions Taekwondo (ages 3-6)</option>
+        <option value="option2">Taekwondo (Adults and Juniors age 7 and up)</option>
+        <option value="option3">Brazilian Jiu-Jitsu (All ages)</option>
+      </select>
+      <br>
+      <br>
+        
+        <p>Would you recommend us to a friend?</p>
+          <input type="radio" name="answer" value="yes"> Yes        
+          <input type="radio" name="answer" value="no"> No
+        <br>
+        <br>
+
+        <p>What did you enjoy about your trial class this evening? (select any that apply)</p>
+          <input type="checkbox" name="trial" value="instructor"> The instructor
+          <br>
+          <input type="checkbox" name="trial" value="classmates"> The classmates
+          <br>
+          <input type="checkbox" name="trial" value="techniques"> The techniques
+          <br>
+          <input type="checkbox" name="trial" value="facility"> The facility
+          <br>
+          <input type="checkbox" name="trial" value="energy"> The energy
+          <br>
+          <input type="checkbox" name="trial" value="workout"> The workout
+          <br>
+          <br>
+        <p>Who was your MAIN instructor during your trial?</p>
+        
+          <input type="radio" name="instructor" value="grandmaster"> Grandmaster
+        <br>
+          <input type="radio" name="instructor" value="master-davis"> Master Davis
+        <br>
+          <input type="radio" name="instructor" value="instructor-denzik"> Instructor Denzik
+        <br>
+          <input type="radio" name="instructor" value="instructor-kimble"> Instructor Kimble
+        <br>
+        <p>Was there anything you did not enjoy about your trial class?</p>
+          <textarea name="dislike" rows="4" cols="50" placeholder="Your answer"></textarea><br>
+
+        <p>Any additional comments or suggestions to help us improve?</p><br>
+          <textarea name="comments" rows="4" cols="50" placeholder="Your comments"></textarea><br>
+
+          <input type="submit" value="Submit">
+
+    </form>
+  </body>
+</html>
