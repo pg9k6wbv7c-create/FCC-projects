@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <section>
+        <h2>Your Cart</h2>
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="Picture of a Rubik's Cube">
+        <p>Rubik's Cube</p>
+        <p>$9.99</p>
+    </section>
+
+    <section>
+        <h2>Payment Information</h2>
+        <form action="/submit-data">
+            <label for="card-name">Cardholder Name
+                <span aria-hidden="true">*</span></label>
+            <input 
+            id="card-name" 
+            name="card-name" 
+            type="text" 
+            placeholder="required"
+            required>
+           
+        <br>
+            <label for="card-number">Card Number
+                <span aria-hidden="true">*</span></label>
+            <input 
+            id="card-number" 
+            name="card-number" 
+            type="text" 
+            placeholder="required" 
+            aria-describedby="card-number-help" 
+            required>
+            
+
+            <p 
+            id="card-number-help"
+            aria-describedby="card-number-help">Please enter your 16 digit credit card number</p>
+            <label for="expiration">Expiration Date
+                <span aria-hidden="true">*</span></label>
+            <input 
+            id="expiration" 
+            name="expiration" 
+            type="text" 
+            placeholder="MM/YYYY" 
+            aria-describedby="expiration" 
+            required>
+
+            <label for="cvv">CVV
+                <span aria-hidden="true">*</span></label>
+            <input
+            id="cvv"
+            name="cvv"
+            type="text"
+            placeholder="3-digit code"
+            required
+            aria-describedby="cvv">
+        <br>
+
+            <button type="submit">Submit</button>
+
+            </form>
+    </section>
+
+</body>
+
+</html>
