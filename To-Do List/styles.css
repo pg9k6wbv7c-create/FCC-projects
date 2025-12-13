@@ -1,0 +1,50 @@
+body {
+  background-color: dimgray;
+  margin: 5px;
+  padding: 5px;
+  font-family: Arial, sans-serif;
+  color: coral;
+  text-align: left
+}
+
+.todo-list {
+  display: grid;
+  list-style-type: none;
+  border-radius: 10px;
+  border-style: inset;
+  border-width: 2px;
+  border-color: black;
+  background-color: white;
+  max-width: 300px;
+  margin: auto;
+  padding: 20px;
+}
+
+.sub-item {
+  list-style-type: none;
+  text-align: left;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+a {
+  text-decoration: none;
+}
+a:link {
+  color: white;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: crimson;
+}
+a:focus {
+  background-color: blue;
+  border: 1px solid blue;
+}
+a:active {
+  color: yellow;
+  }
