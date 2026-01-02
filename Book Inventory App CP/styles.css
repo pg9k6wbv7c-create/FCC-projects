@@ -1,0 +1,107 @@
+html {
+    font-size: 24px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+table {
+  width: 80%;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(to right, green, gray, green);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(to right, lightgreen,gray, lightgreen);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(to right, red, antiquewhite, red);
+}
+
+span {
+  display: inline-block;
+}
+
+tr[class="read"] span[class="status"] {
+  border: 1px solid black;
+  display: block;
+  height: 25px;
+  width: auto;
+  margin: 10px 0;
+  border-radius: 50px;
+  background-image: radial-gradient(circle at center, lightblue, blue);
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 2px solid black;
+  background-image: radial-gradient(circle at center, rgb(228, 200, 149), orange);
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 1px solid black;
+    display: block;
+    margin: 10px 0;
+  width: auto;
+  border-radius: 50px;
+  background-image: radial-gradient(circle at center, rgb(228, 148, 148), red);
+}
+
+span[class="status"], span[class^="rate"] {
+  height: 30px;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+}
+
+span[class^="rate"]>span {
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: auto;
+  height: 20px;
+  width: 20px;
+  background-color: yellow;
+}
+
+span[class~="one"] > :first-child {
+  background-image: linear-gradient(to right, yellow, white);
+}
+
+span[class~="two"] > :nth-child(-n+2)
+{
+  background-image: linear-gradient(to right, yellow, orange);
+}
+
+span[class~="three"] > span {
+  background-image: linear-gradient(to right, yellow, white);
+}
+
+thead tr {
+  background-color: black;
+  color: white; 
+  height: 30px;
+  letter-spacing: 4px;
+  font-size: 18px;
+}

@@ -1,0 +1,105 @@
+html {
+  font-size: 20px;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+h1 {
+  text-align: center;
+  font-size: 3em;
+  color: red;
+  text-shadow: 2px 2px 5px lightgray;
+}
+#title {
+  text-align: center;
+  font-size: 0.9em;
+  max-width: 60vw;
+  margin: auto auto 10px auto;
+  padding-bottom: 40px;
+  text-shadow: 2px 2px 5px lightgray; 
+}
+#img-div {
+  margin: auto;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+#image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border: 2px solid black;
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px gray, -2px -2px 5px gray;
+}
+#img-caption {
+  font-size: 0.9em;
+  text-align: center;
+  margin: -2px auto 10px auto;
+  font-style: italic;
+  width: 75%;
+  text-shadow: 2px 2px 5px lightgray;
+}
+#tribute-info {
+  max-width: 65%;
+  margin: auto;
+  line-height: 1.6em;
+}
+h2 {
+  margin: 30px 0;
+  text-align: center;
+  text-shadow: 2px 2px 5px lightgray;
+  color: red
+}
+h3 {
+  margin: 20px 0;
+  text-align: center;
+  text-shadow: 2px 2px 5px lightgray;
+  color: red;
+}
+.bio {
+  text-align: center;
+  text-shadow: 2px 2px 5px lightgray;
+}
+ul {
+  max-width: 100%;
+  margin: auto;
+  list-style-type: circle;
+}
+li {
+  margin: 10px 0;
+  font-size: 0.85em;
+}
+li::marker {
+  color: red;
+}
+.bold {
+  font-weight: bold;
+  text-shadow: 2px 2px 5px lightgray;
+}
+.italic {
+  font-style: italic;
+  color: darkblue;
+}
+.link {
+  text-align: center;
+  text-shadow: 2px 2px 5px lightgray;
+
+}
+a {
+  color: red;
+  text-decoration: none;
+  text-shadow: 2px 2px 5px lightgray;
+}
+a:hover {
+  color: darkred;
+}
+a:visited {
+  color: crimson;
+}
